@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+section {
+    padding: 90px 14% 70px;
+}
+
+header {
+    text-align: center;
+    margin-left: 100%;
+    letter-spacing: 2px;
+}
+
+header nav ul a {
+    padding: 5%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(beranda.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-text {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.home-text h1 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 1000;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.home-text h6 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.home-text p {
+    width: 100%;
+    max-width: 560px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 33px;
+    margin: 0 auto 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 42px;
+    background: var(--text-color);
+    color: var(--background-color);
+    font-size: 15px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    transition: all .6s;
+}
+
+.btn:hover {
+    transform: scale(0.9) translateY(-6px);
+    border: 2px solid var(--background-color);
+    background: transparent;
+    color: var(--background-color);
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.book img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.book h2 {
+    margin-top: 10px;
+}
+
+.book p {
+    margin-bottom: 10px;
+}
+
+.rent-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.rent-btn:hover {
+    background-color: #444;
+}
+
+#rent-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#rent-form label {
+    margin-bottom: 10px;
+}
+
+#rent-form input[type="text"],
+#rent-form input[type="email"],
+#rent-form input[type="tel"],
+#rent-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#rent-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#rent-form input[type="submit"]:hover {
+    background-color: #444;
+}

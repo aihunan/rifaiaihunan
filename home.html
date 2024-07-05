@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Rental Buku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#catalogue">Catalogue</a></li>
+                <li><a href="#rent">Rent</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home-text">
+                <h6>Toko Rental Buku</h6>
+                <h1>Selamat Datang di Toko Rental Buku</h1>
+                <p>Rental buku terlengkap dan termurah di kota</p>
+                <a href="home.html" class="btn">Lihat Katalog</a>
+            </div>      
+        </section>
+        <section id="catalogue">
+            <h1>Katalog Buku</h1>
+            <div class="books">
+                <div class="book">
+                    <img src="foto1.jpg" alt="Buku 1">
+                    <h2>Buku 1</h2>
+                    <p>Harga: Rp. 50,000</p>
+                    <button class="rent-btn" data-book="Buku 1">Rent</button>
+                </div>
+                <div class="book">
+                    <img src="foto2.jpg" alt="Buku 2">
+                    <h2>Buku 2</h2>
+                    <p>Harga: Rp. 75,000</p>
+                    <button class="rent-btn" data-book="Buku 2">Rent</button>
+                </div>
+                <div class="book">
+                    <img src="foto3.jpg" alt="Buku 3">
+                    <h2>Buku 3</h2>
+                    <p>Harga: Rp. 100,000</p>
+                    <button class="rent-btn" data-book="Buku 3">Rent</button>
+                </div>
+                <div class="book">
+                    <img src="foto.jpg" alt="Buku 4">
+                    <h2>Buku 4</h2>
+                    <p>Harga: Rp. 24,000</p>
+                    <button class="rent-btn" data-book="Buku 4">Rent</button>
+                </div>
+                <div class="book">
+                    <img src="foto4.jpg" alt="Buku 5">
+                    <h2>Buku 5</h2>
+                    <p>Harga: Rp. 16,000</p>
+                    <button class="rent-btn" data-book="Buku 5">Rent</button>
+                </div>
+                <div class="book">
+                    <img src="foto5.jpg" alt="Buku 6">
+                    <h2>Buku 6</h2>
+                    <p>Harga: Rp. 171,000</p>
+                    <button class="rent-btn" data-book="Buku 6">Rent</button>
+                </div>
+            </div>
+        </section>
+        <section id="rent">
+            <h1>Rent Form</h1>
+            <form id="rent-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+                <label for="book">Book:</label>
+                <select id="book" name="book">
+                    <option value="">Select Book</option>
+                    <option value="Buku 1">Buku 1</option>
+                    <option value="Buku 2">Buku 2</option>
+                    <option value="Buku 3">Buku 3</option>
+                    <option value="Buku 4">Buku 4</option>
+                    <option value="Buku 5">Buku 5</option>
+                    <option value="Buku 6">Buku 6</option>
+                </select><br><br>
+                <input type="submit" value="Rent">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>©2024 Toko Rental Buku</p>
+    </footer>
+</body>
+</html>
